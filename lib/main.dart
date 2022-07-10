@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stocks_app/screens/home.dart';
 import 'package:stocks_app/screens/login.dart';
 import 'package:stocks_app/screens/signup.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Login(),
+      home: Home(),
       debugShowCheckedModeBanner: false,
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class Login extends StatelessWidget {
   const Login({Key? key}) : super(key: key);
 
@@ -8,41 +9,38 @@ class Login extends StatelessWidget {
       backgroundColor: const Color(0xff1b232A),
       body: SafeArea(
           child: ListView(
-            children: const [
-              Heading("Login"),
-              SizedBox(
-                height: 25,
-              ),
-              EmailInput(),
-              PasswordInput(),
-               Padding(
-                  padding: EdgeInsets.only(top: 0.0, left: 15.0),
-                  child: TextButton(
-                    onPressed: null,
-                    child: Text(
-                      "Esqueceu sua senha?",
-                      style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          color: Color(0xff5ED5A8)),
-                    ),
-                  )),
-              SignInButton(),
-              
-              Align(
-                alignment: Alignment.center,
-                child: Padding(
-                  padding: EdgeInsets.only(top: 15.0),
-                  child: Text(
-                    "Ou, fazer login com:",
-                    style: TextStyle(
-                        fontWeight: FontWeight.normal, color: Colors.grey),
-                  ),
+        children: const [
+          Heading("Login"),
+          SizedBox(
+            height: 25,
+          ),
+          EmailInput(),
+          PasswordInput(),
+          Padding(
+              padding: EdgeInsets.only(top: 0.0, left: 15.0),
+              child: TextButton(
+                onPressed: null,
+                child: Text(
+                  "Esqueceu sua senha?",
+                  style: TextStyle(
+                      fontWeight: FontWeight.normal, color: Color(0xff5ED5A8)),
                 ),
+              )),
+          SignInButton(),
+          Align(
+            alignment: Alignment.center,
+            child: Padding(
+              padding: EdgeInsets.only(top: 15.0),
+              child: Text(
+                "Ou, fazer login com:",
+                style: TextStyle(
+                    fontWeight: FontWeight.normal, color: Colors.grey),
               ),
-              SocialButtons(),
-              
-            ],
-          )),
+            ),
+          ),
+          SocialButtons(),
+        ],
+      )),
     );
   }
 }
