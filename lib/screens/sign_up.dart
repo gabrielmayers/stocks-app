@@ -14,7 +14,7 @@ class SignUp extends StatelessWidget {
               SizedBox(
                 height: 25,
               ),
-              Heading("Sign Up"),
+              Heading("Cadatrar-se"),
               SizedBox(
                 height: 25,
               ),
@@ -24,13 +24,13 @@ class SignUp extends StatelessWidget {
               Padding(
                   padding: EdgeInsets.only(top: 0.0, left: 15.0),
                   child: TextButton(
+                    onPressed: null,
                     child: Text(
-                      "Already have a login? Click here",
+                      "Já possui uma conta?",
                       style: TextStyle(
                           fontWeight: FontWeight.normal,
                           color: Color(0xff5ED5A8)),
                     ),
-                    onPressed: null,
                   )),
               SignInButton(),
               Align(
@@ -38,7 +38,7 @@ class SignUp extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.only(top: 15.0),
                   child: Text(
-                    "Or sign up with?",
+                    "Ou cadastre-se com:",
                     style: TextStyle(
                         fontWeight: FontWeight.normal, color: Colors.grey),
                   ),
@@ -85,7 +85,7 @@ class EmailInput extends StatelessWidget {
                 fontWeight: FontWeight.normal,
                 color: Colors.white.withOpacity(.9)),
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Container(
@@ -106,7 +106,7 @@ class EmailInput extends StatelessWidget {
                 // prefixIcon: Icon(Icons.email),
                 filled: true,
                 fillColor: const Color(0xff161C22),
-                hintText: 'Enter your email',
+                hintText: 'Insira seu email:',
                 hintStyle: TextStyle(color: Colors.grey.withOpacity(.75)),
                 contentPadding:
                     const EdgeInsets.symmetric(vertical: 0.0, horizontal: 20.0),
@@ -138,13 +138,13 @@ class PasswordInput extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Password",
+            "Senha",
             style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.normal,
                 color: Colors.white.withOpacity(.9)),
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Container(
@@ -166,7 +166,7 @@ class PasswordInput extends StatelessWidget {
                 // prefixIcon: Icon(Icons.email),
                 filled: true,
                 fillColor: const Color(0xff161C22),
-                hintText: 'Enter your password',
+                hintText: 'Insira sua senha',
                 hintStyle: TextStyle(color: Colors.grey.withOpacity(.75)),
                 contentPadding:
                     const EdgeInsets.symmetric(vertical: 0.0, horizontal: 20.0),
@@ -198,13 +198,13 @@ class ConfirmPasswordInput extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Confirm Password",
+            "Confirmar Senha",
             style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.normal,
                 color: Colors.white.withOpacity(.9)),
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Container(
@@ -226,7 +226,7 @@ class ConfirmPasswordInput extends StatelessWidget {
                 // prefixIcon: Icon(Icons.email),
                 filled: true,
                 fillColor: const Color(0xff161C22),
-                hintText: 'Enter your password',
+                hintText: 'Insira sua senha',
                 hintStyle: TextStyle(color: Colors.grey.withOpacity(.75)),
                 contentPadding:
                     const EdgeInsets.symmetric(vertical: 0.0, horizontal: 20.0),
@@ -270,7 +270,7 @@ class SignInButton extends StatelessWidget {
               )
             ]),
         child: TextButton(
-          child: const Text("Sign Up", style: TextStyle(color: Colors.black)),
+          child: const Text("Cadastrar", style: TextStyle(color: Colors.black)),
           onPressed: () {
             //Navigate Home Here
 
